@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int btime[10],p[10],m,temp,i,j,wt[10],sum=0;
+	float avg;
+	printf("Enter number of total proces:-");
+	scanf("%d",&m);
+	printf("\n Enter burst time for each process:-");
+	for(i=0;i<m;i++)
+	{
+		printf("\nBurst time of process P%d:",i);
+		scanf("%d",&btime[i]);
+		p[i]=i;
+	}
+	for(i=0;i<m-1;i++)
+	{
+		for(j=i+1;j<m;j++)
