@@ -1,5 +1,6 @@
 //shortest job
 
+
 #include<stdio.h>
 #include<conio.h>
 
@@ -57,7 +58,7 @@ int main()
 	}
 	for(i=0;i<m;i++)
 	{
-			sum1=sum1+btime[i];
+		sum1=sum1+btime[i];
 	}
 
 	for(i=0;i<m;i++)
@@ -68,15 +69,15 @@ int main()
 	avg=(float)sum/m;
 	avg1=(float)sum1/m;
 	
-	printf("\n\nWaiting time for each process:-\n");
-	for(i=0;i<m;i++)
-	{
-		printf("\n Waiting time for process P%d is %d second.\n",p[i],wtime[i]);
-	}
 	printf("\n\nTurnaround time for each process:-\n");
 	for(i=0;i<m;i++)
 	{
 		printf("\n Turnaround time for process P%d is %d second.\n",p[i],ttime[i]);
+	}
+	printf("\n\nWaiting time for each process:-\n");
+	for(i=0;i<m;i++)
+	{
+		printf("\n Waiting time for process P%d is %d second.\n",p[i],wtime[i]);
 	}
 	printf("\n\nAverage waiting time:-\n");
 	printf("\n Average waiting time is %f second.\n",avg);
