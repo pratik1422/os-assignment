@@ -1,20 +1,34 @@
+//shortest job
 
 #include<stdio.h>
 #include<conio.h>
 
 int main()
 {
-	int btime[10],p[10],m,temp,i,j,wt[10],sum=0;
+	int atime[10];
+	int btime[10];
+	int wtime[10];
+	int p[10];
+	int m;
+	int temp;
+	int i;
+	int j;
+	int sum=0;
+	int sum1=0;
 	float avg;
-	printf("Enter number of total proces:-");
+	float avg1;
+	
+	printf("Enter Number of total proces:-");
 	scanf("%d",&m);
-	printf("\n Enter burst time for each process:-");
+	printf("\nEnter arrival time and Burst time for each process:-\n\n");
 	for(i=0;i<m;i++)
 	{
-		printf("\nBurst time of process P%d:",i);
+		
+		printf("\n process P%d:-\n",i);
+		printf("\n Arrial time of process P%d:-",i);
+		scanf("%d",&atime[i]);
+		p[i]=i;
+		printf("\n Burst time of process P%d:-",i);
 		scanf("%d",&btime[i]);
 		p[i]=i;
 	}
-	for(i=0;i<m-1;i++)
-	{
-		for(j=i+1;j<m;j++)
