@@ -51,23 +51,13 @@ int main()
 	}
 	
 	wtime[0]=0;
-	ttime[0]=0;
 	for(i=0;i<m;i++)
 	{
 		wtime[i]=wtime[i-1]+btime[i-1];
-		ttime[i]=ttime[i-1]+atime[i-1];
 	}
 	for(i=0;i<m;i++)
 	{
-		if(i=0)
-		{
-			ttime[i]=0;
-		}
-		else
-		{
-			ttime[i]=ttime[i-1]+btime[i];
 			sum1=sum1+btime[i];
-		}
 	}
 
 	for(i=0;i<m;i++)
